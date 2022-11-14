@@ -1,9 +1,11 @@
 // @import "./constants/reset.scss";
+@import "./constants/color.scss";
 @import "./constants/font.scss";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/antd/4.24.2/antd.dark.min.css");
-@import "./constants/color.scss";
 
 body {
   font-family: "Montserrat", "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 16px;
   background: $bg;
 }

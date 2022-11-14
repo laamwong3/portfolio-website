@@ -1,11 +1,15 @@
+import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Header from "../components/Header/Header";
 import s from "../styles/Home.module.scss";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <>
-      <div>HELLO</div>
+      <Header />
     </>
   );
-}
+};
+
+export default Home;

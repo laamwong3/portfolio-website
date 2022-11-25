@@ -1,0 +1,9 @@
+@use "../constants/variables" as *;
+@use "../constants/font" as *;
+
+body {
+  font-family: "Montserrat", "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 16px;
+  background: $bg;
+}

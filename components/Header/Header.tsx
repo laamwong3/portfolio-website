@@ -21,8 +21,8 @@ const items: MenuProps["items"] = [
 ];
 
 const Header = () => {
-  const isTablet = useMediaQuery({ maxWidth: 1150 });
-  console.log(isTablet);
+  // const isTablet = useMediaQuery({ maxWidth: 1150 });
+  // console.log(isTablet);
 
   return (
     <div className={s.container}>
@@ -31,9 +31,13 @@ const Header = () => {
           <CopyrightOutlined className={s.title_icon} />
           Portfolio
         </div>
-        <div className={s.menu}>
-          <Menu items={items} mode="horizontal" className={s.menu_items} />
-        </div>
+
+        <Menu
+          items={items}
+          mode="horizontal"
+          className={s.menu}
+          selectedKeys={[]}
+        />
 
         <div className={s.icons}>
           <GithubOutlined className={s.icon} />

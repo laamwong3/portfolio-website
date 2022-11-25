@@ -1,6 +1,14 @@
+@use "../constants/variables" as *;
+
 @mixin flex_center($direction: row) {
   display: flex;
   flex-direction: $direction;
   justify-content: center;
   align-items: center;
+}
+
+@mixin container {
+  width: 100%;
+  max-width: $xxl;
+  margin: 0 auto;
 }

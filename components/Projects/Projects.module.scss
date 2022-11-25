@@ -1,0 +1,14 @@
+@use "../../styles/constants/mixin" as *;
+@use "../../styles/constants/variables" as *;
+
+.container {
+  @include container;
+
+  .wrapper {
+    width: 100%;
+
+    @media screen and (max-width: $xxl) {
+      padding: 0 2rem;
+    }
+  }
+}

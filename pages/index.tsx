@@ -1,6 +1,8 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import About from "../components/About/About";
+import Achievements from "../components/Achievements/Achievements";
 
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
@@ -15,6 +17,8 @@ const Home: NextPage = () => {
       <Hero />
       <Projects />
       <Technologies />
+      <About />
+      <Achievements />
     </>
   );
 };

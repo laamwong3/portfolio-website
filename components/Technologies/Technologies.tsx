@@ -1,4 +1,4 @@
-import { Typography } from "antd";
+import { Divider, Typography } from "antd";
 import React, { FC } from "react";
 import s from "./Technologies.module.scss";
 import { DiFirebase, DiReact, DiZend } from "react-icons/di";
@@ -22,7 +22,7 @@ const Skill: FC<SkillProps> = ({ Icon, content, title }) => {
 
 const Technologies = () => {
   return (
-    <div className={s.container}>
+    <div className={s.container} id="tech">
       <div className={s.wrapper}>
         <Typography.Title style={{ textAlign: "center" }}>
           Technologies
@@ -49,6 +49,7 @@ const Technologies = () => {
           />
         </div>
       </div>
+      {/* <Divider style={{ background: "white" }} /> */}
     </div>
   );
 };

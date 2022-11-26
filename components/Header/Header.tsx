@@ -13,11 +13,29 @@ import { useMediaQuery } from "react-responsive";
 
 const items: MenuProps["items"] = [
   {
-    label: <a href="#project">Projects</a>,
+    label: (
+      <Link href="#project" scroll={false}>
+        Projects
+      </Link>
+    ),
     key: "project",
   },
-  { label: <a href="#tech">Technologies</a>, key: "technologies" },
-  { label: <a href="#about">About</a>, key: "about" },
+  {
+    label: (
+      <Link href="#tech" scroll={false}>
+        Technologies
+      </Link>
+    ),
+    key: "technologies",
+  },
+  {
+    label: (
+      <Link href="#about" scroll={false}>
+        About
+      </Link>
+    ),
+    key: "about",
+  },
 ];
 
 const Header = () => {

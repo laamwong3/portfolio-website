@@ -8,7 +8,10 @@ const Projects = () => {
   return (
     <div id="project" className={s.container}>
       <div className={s.wrapper}>
-        <Typography.Title level={1} style={{ textAlign: "center" }}>
+        <Typography.Title
+          level={1}
+          style={{ textAlign: "center", marginBottom: "3rem" }}
+        >
           Projects
         </Typography.Title>
         <div className={s.project_cards}>

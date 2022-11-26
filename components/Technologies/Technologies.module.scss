@@ -1,0 +1,32 @@
+@use "../../styles/constants/mixin" as *;
+@use "../../styles/constants/variables" as *;
+
+.container {
+  @include container;
+
+  .wrapper {
+    width: 100%;
+    margin-top: 4rem;
+
+    @media screen and (max-width: $xxl) {
+      padding: 0 2rem;
+    }
+
+    .skills {
+      width: 100%;
+      @include flex_center;
+      justify-content: space-between;
+
+      @media screen and (max-width: $md) {
+        flex-direction: column;
+      }
+
+      .skill_item {
+        width: 100%;
+        flex: 1;
+        text-align: center;
+        // border: 1px solid yellow;
+      }
+    }
+  }
+}

@@ -12,10 +12,10 @@ const Projects = () => {
           Projects
         </Typography.Title>
         <div className={s.project_cards}>
-          <Row>
+          <Row gutter={[32, 32]} justify="space-between">
             {projects.map((project, index) => (
-              <Col key={index}>
-                <ProjectCard />
+              <Col key={index} xs={24} sm={24} md={12} lg={8} xl={6} xxl={6}>
+                <ProjectCard project={project} />
               </Col>
             ))}
           </Row>
